@@ -1,0 +1,40 @@
+{
+  "name": "cursor-rules-awesome",
+  "displayName": "Cursor Rules Awesome",
+  "description": "Cursor AI is an AI-powered code editor. .cursorrules files define custom rules for Cursor AI to follow when generating code, allowing you to tailor its behavior to your specific needs and preferences.",
+  "version": "1.0.1",
+  "publisher": "dawamraja",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "icon": "images/icon.png",
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorRules.addRule",
+        "title": "Cursor Rules: Add .cursorrules"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawamr/cursor-rules-awesome"
+  }
+}
