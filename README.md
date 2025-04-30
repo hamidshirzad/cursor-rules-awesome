@@ -51,3 +51,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Issue Tracker](https://github.com/dawamr/cursor-rules-awesome/issues)
 
 ---
+
